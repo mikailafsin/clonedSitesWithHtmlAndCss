@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #2a2b30;
+  overflow: hidden;
+}
+
+#kapsayici {
+  display: flex;
+}
+
+#kapsayici #sol {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#kapsayici #sol .logo {
+  margin-bottom: 1rem;
+}
+
+#kapsayici #sol h1 {
+  margin: 3rem 0 2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#kapsayici #sol .giris-ekrani {
+  width: 53%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #15161a;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+#kapsayici #sol .giris-ekrani form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+#kapsayici #sol .giris-ekrani form div label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+#kapsayici #sol .giris-ekrani form div .metin-girisi {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.3rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #2a2b30;
+}
+
+#kapsayici #sol .giris-ekrani form .sifremi-unuttum {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#kapsayici #sol .giris-ekrani form .sifremi-unuttum a {
+  color: #9fa3a9;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#kapsayici #sol .giris-ekrani form .giris-yap-btn {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #26df2e;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+#kapsayici #sol .giris-ekrani form .giris-yap-btn:hover {
+  background-color: #3376ff;
+}
+
+#kapsayici #sol .giris-ekrani .veya {
+  color: #9fa3a9;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+#kapsayici #sol .giris-ekrani .fb {
+  width: 85%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #304b92;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+#kapsayici #sol .giris-ekrani .fb:hover {
+  background-color: #3376ff;
+}
+
+#kapsayici #sol .giris-ekrani .fb img {
+  width: 16px;
+  float: left;
+}
+
+#kapsayici #sol .giris-ekrani .altalan {
+  color: #9fa3a9;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#kapsayici #sol .giris-ekrani .altalan span {
+  margin-right: 0.3rem;
+}
+
+#kapsayici #sol .giris-ekrani .altalan a {
+  color: #26df2e;
+  text-decoration: underline;
+}
+
+#kapsayici #sag {
+  height: 100vh;
+  flex: 1;
+  background: url(img/ejderha.jpg) no-repeat center center / cover;
+}
+
+#kapsayici #sag .sabit-alan {
+  display: flex;
+  position: fixed;
+  right: 4rem;
+  bottom: 0;
+}
+
+#kapsayici #sag .sabit-alan:hover a:nth-child(2) {
+  text-decoration: underline;
+}
+
+#kapsayici #sag .sabit-alan a {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#kapsayici #sag .sabit-alan a:nth-child(1) {
+  color: #fff;
+  background-color: #474650;
+  border-top-left-radius: 5px;
+}
+
+#kapsayici #sag .sabit-alan a:nth-child(2) {
+  color: #000;
+  background-color: #26df2e;
+  border-top-right-radius: 5px;
+}
+
+#kapsayici #sag .sabit-alan a:nth-child(2)::after {
+  width: 35px;
+  height: 35px;
+  content: "";
+  position: absolute;
+  right: 13px;
+  bottom: 35px;
+  background-color: #26df2e;
+  background-image: url(img/angle-double-up-solid.svg);
+  background-size: 0.5rem;
+  background-position: 13px 8px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  #kapsayici #sol .giris-ekrani {
+    width: 80%;
+  }
+
+  #kapsayici #sol .giris-ekrani form {
+    width: 85%;
+  }
+
+  #kapsayici #sol .giris-ekrani .fb {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #kapsayici #sol {
+    justify-content: center;
+  }
+
+  #kapsayici #sol .logo {
+    margin-top: 1.4rem;
+    margin-bottom: 0rem;
+  }
+
+  #kapsayici #sol h1 {
+    margin: 1.5rem 0;
+  }
+
+  #kapsayici #sol .giris-ekrani {
+    width: 90%;
+    padding: 0;
+  }
+
+  #kapsayici #sol .giris-ekrani form {
+    width: 85%;
+    margin: 1rem 0;
+  }
+
+  #kapsayici #sol .giris-ekrani form .giris-yap-btn {
+    margin-bottom: 0;
+  }
+
+  #kapsayici #sol .giris-ekrani .altalan {
+    margin-bottom: 1.5rem;
+  }
+
+  #kapsayici #sag {
+    display: none;
+  }
+}

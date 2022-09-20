@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.top-section {
+  background-color: #0b65c6;
+}
+
+.top-section header {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-section header .header-logo {
+  width: 200px;
+  height: 100px;
+}
+
+.top-section header .header-logo a img {
+  width: 100%;
+  height: 100%;
+  margin-left: -20px;
+}
+
+.top-section header .header-links ul {
+  list-style: none;
+}
+
+.top-section header .header-links ul li {
+  display: inline-block;
+}
+
+.top-section header .header-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.top-section header .header-links ul li a:hover {
+  opacity: 0.7;
+}
+
+.top-section header .header-links ul li a:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.top-section header .header-links ul li a span.green {
+  font-size: 12px;
+  padding: 2px 8px;
+  font-weight: bold;
+  color: #000;
+  background-color: #08a78e;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.top-section .product {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  overflow: visible;
+}
+
+.top-section .product .product-info {
+  flex: 1;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: -0.5px;
+}
+
+.top-section .product .product-info h1 {
+  margin-bottom: 20px;
+}
+
+.top-section .product .product-info p {
+  color: #c2d8f1;
+  font-size: 20px;
+}
+
+.top-section .product .product-info .download-buttons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.top-section .product .product-info .download-buttons a:nth-child(1) {
+  margin-right: 10px;
+}
+
+.top-section .product .product-img {
+  width: 400px;
+  height: 600px;
+}
+
+.top-section .product .product-img img {
+  width: 100%;
+  height: 100%;
+  margin-left: 100px;
+}
+
+.top-section .middle-section {
+  background-color: #fff;
+}
+
+.top-section .middle-section .container {
+  width: 50%;
+  margin: auto;
+}
+
+.top-section .middle-section .container .bilgi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  margin-bottom: 40px;
+}
+
+.top-section .middle-section .container .bilgi #blok {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-section .middle-section .container .bilgi #blok .fas {
+  color: #3375bb;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.top-section .middle-section .container .bilgi-aciklama {
+  text-align: center;
+  padding: 10px 5px 40px 5px;
+}
+
+.top-section .middle-section .container .bilgi-aciklama h1 {
+  font-size: 39px;
+  padding-bottom: 15px;
+}
+
+.top-section .middle-section .container .bilgi-aciklama p {
+  font-size: 18px;
+}
+
+.top-section .middle-section .container .kutular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-section .middle-section .container .kutular #box {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.top-section .middle-section .container .kutular #box .kutu {
+  padding: 30px;
+}
+
+.top-section .middle-section .container .kutular #box .kutu:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.top-section .middle-section .container .kutular #box .kutu .fas {
+  color: #32a071;
+  margin-right: 10px;
+}
+
+.top-section .middle-section .container .indir {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.top-section .middle-section .container .indir .indir-btn {
+  display: inline-block;
+  padding: 20px;
+  background-color: #0b65c6;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+
+.top-section .middle-section .container .indir .indir-btn:hover {
+  background-color: #0953a2;
+}
+
+.top-section .middle-section .container .tanitim {
+  margin-bottom: 20px;
+}
+
+.top-section .middle-section .container .tanitim .tanitim-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section
+  .middle-section
+  .container
+  .tanitim
+  .tanitim-element:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.top-section
+  .middle-section
+  .container
+  .tanitim
+  .tanitim-element
+  .tanitim-resim {
+  flex: 1;
+}
+
+.top-section
+  .middle-section
+  .container
+  .tanitim
+  .tanitim-element
+  .tanitim-resim
+  img {
+  width: 120%;
+  height: 120%;
+}
+
+.top-section
+  .middle-section
+  .container
+  .tanitim
+  .tanitim-element
+  .tanitim-aciklama {
+  flex: 1;
+}
+
+.top-section
+  .middle-section
+  .container
+  .tanitim
+  .tanitim-element
+  .tanitim-aciklama
+  h1 {
+  font-size: 40px;
+}
+
+.top-section
+  .middle-section
+  .container
+  .tanitim
+  .tanitim-element
+  .tanitim-aciklama
+  p {
+  font-size: 20px;
+}
+
+.top-section .middle-section .container .alt-aciklama {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.top-section .middle-section .container .alt-aciklama h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.top-section .middle-section .container .alt-aciklama p {
+  font-size: 18px;
+}
+
+.top-section .middle-section .container .alt-resimler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.top-section .middle-section .container .alt-resimler img:nth-child(1) {
+  margin-right: 20px;
+}
+
+.top-section .middle-section .indirme-alani {
+  background-color: #f9fbfd;
+  padding: 50px 0px;
+}
+
+.top-section
+  .middle-section
+  .indirme-alani
+  .container-2
+  .indirme-alani-bilgi
+  p {
+  font-size: 20px;
+}
+
+.top-section
+  .middle-section
+  .indirme-alani
+  .container-2
+  .indirme-alani-store
+  a {
+  display: inline-block;
+  width: 200px;
+  height: 63px;
+}
+
+.top-section
+  .middle-section
+  .indirme-alani
+  .container-2
+  .indirme-alani-store
+  a
+  img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-section
+  .middle-section
+  .indirme-alani
+  .container-2
+  .indirme-alani-store
+  a:nth-child(2) {
+  margin: 0px 0px 0px 30px;
+}
+
+.top-section .middle-section .indirme-alani .container-2 {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-section footer {
+  background-color: #fff;
+}
+
+.top-section footer .footer-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  padding: 30px 0 30px 0;
+  overflow: hidden;
+}
+
+.top-section footer .footer-container .footer-one .footer-logo {
+  width: 250px;
+  height: 125px;
+}
+
+.top-section footer .footer-container .footer-one .footer-logo img {
+  width: 100%;
+  height: 100%;
+  margin-top: -15px;
+}
+
+.top-section footer .footer-container .footer-one .logos {
+  text-align: center;
+  margin: -30px 0 0 10px;
+}
+
+.top-section footer .footer-container .footer-one .logos a .fab {
+  font-size: 23px;
+  margin-right: 5px;
+  color: #859ab8;
+}
+
+.top-section footer .footer-container h4 {
+  color: #4f5a65;
+  text-transform: uppercase;
+}
+
+.top-section footer .footer-container ul {
+  list-style: none;
+}
+
+.top-section footer .footer-container ul li {
+  margin: 10px 0 20px 0;
+}
+
+.top-section footer .footer-container ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #4f5a65;
+}
+
+.top-section footer .footer-container ul li a:hover {
+  text-decoration: underline;
+}
+
+.top-section footer .footer-container .footer-two,
+.footer-three,
+.footer-four,
+.footer-five {
+  margin: 0 15px 0 0;
+}

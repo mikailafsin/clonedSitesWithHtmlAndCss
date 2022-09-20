@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #dadbd4;
+    overflow: hidden;
+}
+
+.top-color {
+    width: 100%;
+    height: 127px;
+    background-color: #009688;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+.wrapper {
+    width: 1400px;
+    height: 96vh;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.wrapper .left {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    background-color: #ededed;
+}
+
+.wrapper .left .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ededed;
+    padding: 8px 16px;
+}
+
+.wrapper .left .top .pp {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrapper .left .top .pp img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .left .top .status .fas {
+    color: #919191;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.wrapper .left .middle .input {
+    background-color: #f6f6f6;
+    padding: 7px 10px;
+}
+
+.wrapper .left .middle .input input {
+    width: 100%;
+    height: 37px;
+    border: none;
+    outline: none;
+    padding: 8px 16px 8px 60px;
+    background-color: #fff;
+    background-image: url("img/search-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.wrapper .left .bottom {
+    overflow-y: auto;
+}
+
+.wrapper .left .bottom .msg {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+
+.wrapper .left .bottom .msg:hover {
+    background-color: #f5f5f5;
+}
+
+.wrapper .left .bottom .msg .msg-content {
+    flex: 4;
+}
+
+.wrapper .left .bottom .msg .contact-msg,
+.date {
+    color: #828283;
+}
+
+.wrapper .left .bottom .msg .msg-pp {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrapper .left .bottom .msg .msg-pp img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .left .bottom .msg .date {
+    flex: 1;
+    font-size: 13px;
+    text-align: right;
+}
+
+.wrapper .right {
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.wrapper .right .phone-img {
+    width: 356px;
+    height: 355px;
+    margin-bottom: 30px;
+}
+
+.wrapper .right .phone-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .right .phone-content {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.wrapper .right .phone-content div {
+    color: #828283;
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.wrapper .right .phone-content p {
+    display: inline-block;
+    color: #b5b6b7;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper .right .wp-windows {
+    width: 100%;
+    color: #b5b6b7;
+    margin-top: 45px;
+}
+
+.wrapper .right .wp-windows div {
+    display: inline-block;
+}
+
+.wrapper .right .wp-windows .fa-laptop {
+    font-size: 16px;
+    margin-right: 0px;
+}
+
+.wrapper .right .wp-windows a {
+    color: #0aa545;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+    }
+    .wrapper .left {
+        min-width: 420px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .wrapper .right {
+        min-width: 500px;
+    }
+}
